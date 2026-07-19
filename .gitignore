@@ -58,7 +58,9 @@ checkpoints/best/**.lock
 
 # ---- Professor-facing bundle and release archive (released separately) ----
 submission/
+MD_MOBASHIR_HOSSIAN_SIFAT_MountainCar_RL_Submission/
 MountainCar_RL_Recruitment_Submission.zip
+MD_MOBASHIR_HOSSIAN_SIFAT_MountainCar_RL_Submission.zip
 *.zip
 
 # ---- Secrets (never commit) ----
@@ -88,6 +90,7 @@ SECURITY_REVIEW.md
 CLEAN_CLONE_TEST.md
 FINAL_SUBMISSION_STATUS.md
 FINAL_CONSISTENCY_REPORT.md
+FINAL_ZIP_VERIFICATION.md
 GITHUB_RELEASE_COMMANDS.txt
 submission_email.md
 GITHUB_PUBLICATION_PLAN.md

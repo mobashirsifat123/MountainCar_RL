@@ -1,5 +1,9 @@
 # Learning to Build Momentum: Experience Replay, On-Policy Learning, and Reward Shaping in MountainCar
 
+**MD MOBASHIR HOSSIAN SIFAT**
+Sichuan University — Software Engineering
+Repository: <https://github.com/mobashirsifat123/MountainCar_RL>
+
 ## Abstract
 
 MountainCar tests whether an agent can learn that reaching a goal to its right

@@ -16,7 +16,7 @@ REPORT = ROOT / "report/report.md"
 CSS = ROOT / "report/report.css"
 TEMP_DIR = ROOT / "tmp/pdfs"
 OUTPUT_DIR = ROOT / "output/pdf"
-OUTPUT = OUTPUT_DIR / "MountainCar_RL_Recruitment_Report.pdf"
+OUTPUT = OUTPUT_DIR / "MD_MOBASHIR_HOSSIAN_SIFAT_MountainCar_RL_Report.pdf"
 LOG = OUTPUT_DIR / "report_build_log.txt"
 
 
@@ -52,6 +52,7 @@ def main() -> int:
         "--resource-path=.:report:results",
         f"--css={CSS.relative_to(ROOT).as_posix()}",
         "--metadata=pagetitle:MountainCar RL Recruitment Report",
+        "--metadata=author:MD MOBASHIR HOSSIAN SIFAT",
         f"--output={html_path.relative_to(ROOT).as_posix()}",
     ]
     lines.append(f"Pandoc command: {_command_text(command)}")

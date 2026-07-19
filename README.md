@@ -5,6 +5,11 @@ potential-based reward shaping in Gymnasium `MountainCar-v0`. All agents are
 implemented directly with NumPy and PyTorch; no packaged reinforcement-learning
 algorithm is used.
 
+**Author:** MD MOBASHIR HOSSIAN SIFAT - Sichuan University, Software Engineering
+**Repository:** <https://github.com/mobashirsifat123/MountainCar_RL>
+**Report:** see `report/MD_MOBASHIR_HOSSIAN_SIFAT_MountainCar_RL_Report.pdf` and
+`report/report.md`.
+
 - **Assignment goal:** reach the `MountainCar-v0` flag within **100** actual
   environment steps (assignment success). Environment completion (reaching the
   flag within the normal 200-step limit) is tracked separately. A completion in
