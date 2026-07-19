@@ -1,0 +1,3 @@
+# For pip users. The uv.lock file is the exact resolved environment used by this study.
+-e .[dev]
+

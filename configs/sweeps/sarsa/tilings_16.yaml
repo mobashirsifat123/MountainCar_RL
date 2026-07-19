@@ -1,0 +1,4 @@
+extends: base.yaml
+experiment: {name: tuning_sarsa_tilings_16_seed0}
+agent: {tile_coder: {num_tilings: 16}}
+logging: {output_dir: results/raw/tuning/sarsa/tilings_16_seed0, checkpoint_dir: checkpoints/tuning/sarsa/tilings_16_seed0}

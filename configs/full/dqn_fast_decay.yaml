@@ -1,0 +1,6 @@
+extends: dqn_replay.yaml
+experiment: {name: dqn_replay_fast_decay_full, condition: dqn_replay_fast_decay}
+agent: {epsilon: {decay_steps: 200}}
+logging:
+  output_dir: results/raw/full/dqn_replay_fast_decay_seed0
+  checkpoint_dir: checkpoints/full/dqn_replay_fast_decay_seed0

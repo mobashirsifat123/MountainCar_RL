@@ -1,0 +1,4 @@
+extends: no_shaping.yaml
+experiment: {name: tuning_shaping_strong_seed0, condition: dqn_replay_shaped_strong}
+reward_shaping: {enabled: true, beta: 1.0, eta: 0.5}
+logging: {output_dir: results/raw/tuning/shaping/strong_seed0, checkpoint_dir: checkpoints/tuning/shaping/strong_seed0}

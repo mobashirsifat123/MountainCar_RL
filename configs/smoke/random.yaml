@@ -1,0 +1,18 @@
+schema_version: 1
+experiment:
+  name: random_policy_smoke
+  condition: random
+  training_seed: 0
+  episodes: 3
+environment:
+  id: MountainCar-v0
+  max_episode_steps: 200
+agent:
+  type: random
+logging:
+  output_dir: results/raw/smoke/random_seed0
+  record_trajectories: true
+reproducibility:
+  deterministic_torch: true
+evaluation:
+  validation_episode_seeds: [1000, 1001, 1002]

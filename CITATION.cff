@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or build on these experiments, please cite it as below."
+title: "Learning to Build Momentum: Experience Replay, On-Policy Learning, and Reward Shaping in MountainCar"
+type: software
+authors:
+  - name: MD MOBASHIR HOSSIAN SIFAT
+repository-code: "https://github.com/<YOUR_GITHUB_USERNAME>/mountaincar-rl-research"
+version: "1.0.0"
+date-released: "2026-07-19"
+license: MIT
+keywords:
+  - reinforcement-learning
+  - mountaincar
+  - sarsa-lambda
+  - dqn
+  - experience-replay
+  - reward-shaping
+  - tile-coding
+abstract: >-
+  A reproducible empirical study of on-policy SARSA(lambda) with tile coding,
+  DQN with and without experience replay, potential-based reward shaping, and a
+  controlled rapid-exploration-decay intervention on Gymnasium MountainCar-v0.
+  Five training seeds, 20 held-out evaluation episodes per seed, and a locked
+  60,000-interaction budget per learned run. The strongest measured condition
+  was tile-coded SARSA(lambda): 1.000 completion within 200 steps and 0.380
+  assignment-success within 100 steps; no condition reliably met the 100-step
+  target.

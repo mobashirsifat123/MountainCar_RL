@@ -1,0 +1,10 @@
+extends: ../../base/dqn_replay.yaml
+experiment:
+  name: shaping_ablation_none_seed0
+  condition: dqn_replay_no_shaping
+reward_shaping:
+  enabled: false
+  beta: 0.0
+logging:
+  output_dir: results/raw/validation/shaping_none_seed0
+  checkpoint_dir: checkpoints/validation/shaping_none_seed0

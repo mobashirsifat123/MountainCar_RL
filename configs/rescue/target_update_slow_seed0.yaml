@@ -1,0 +1,6 @@
+extends: ../full/dqn_replay.yaml
+experiment: {name: rescue_target_update_slow_seed0, condition: rescue_target_update_slow, training_seed: 0}
+agent: {target_update_frequency: 1000}
+logging:
+  output_dir: results/raw/rescue/target_update_slow_seed0
+  checkpoint_dir: checkpoints/rescue/target_update_slow_seed0

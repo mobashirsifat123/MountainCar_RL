@@ -1,0 +1,4 @@
+extends: base.yaml
+experiment: {name: tuning_dqn_warmup_long_seed0}
+agent: {warmup_steps: 5000}
+logging: {output_dir: results/raw/tuning/dqn/warmup_long_seed0, checkpoint_dir: checkpoints/tuning/dqn/warmup_long_seed0}

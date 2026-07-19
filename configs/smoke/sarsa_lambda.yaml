@@ -1,0 +1,35 @@
+schema_version: 1
+experiment:
+  name: sarsa_lambda_smoke
+  condition: sarsa_lambda
+  training_seed: 0
+  episodes: 3
+environment:
+  id: MountainCar-v0
+  max_episode_steps: 50
+agent:
+  type: sarsa_lambda
+  alpha: 0.4
+  gamma: 0.99
+  lambda: 0.9
+  trace_type: replacing
+  trace_clip: 10.0
+  epsilon:
+    start: 1.0
+    end: 0.1
+    decay_steps: 150
+  tile_coder:
+    num_tilings: 8
+    tiles_per_dim: [8, 8]
+training:
+  validation_interval_episodes: 1
+logging:
+  output_dir: results/raw/smoke/sarsa_lambda_seed0
+  checkpoint_dir: checkpoints/smoke/sarsa_lambda_seed0
+  record_trajectories: true
+reproducibility:
+  deterministic_torch: true
+  device: cpu
+evaluation:
+  validation_episode_seeds: [1000, 1001]
+

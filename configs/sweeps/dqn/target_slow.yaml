@@ -1,0 +1,4 @@
+extends: base.yaml
+experiment: {name: tuning_dqn_target_slow_seed0}
+agent: {target_update_frequency: 1000}
+logging: {output_dir: results/raw/tuning/dqn/target_slow_seed0, checkpoint_dir: checkpoints/tuning/dqn/target_slow_seed0}

@@ -1,0 +1,23 @@
+# Line endings: normalize text, keep binaries exact.
+* text=auto eol=lf
+
+# Binary assets - never diff or merge.
+*.png binary
+*.pdf binary
+*.pt binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.pkl binary
+*.npy binary
+
+# Generated lockfile - treat as text for clean diffs.
+uv.lock text eol=lf
+
+# No Git LFS is configured. Every tracked file is under 3 MiB, well below
+# GitHub's 100 MiB per-file limit. Large raw evidence (~408 MiB under
+# results/raw/full/) and full checkpoint trees (~121 MiB under
+# checkpoints/full/) are intentionally excluded via .gitignore; publish them
+# separately via a release archive or Git LFS only if direct raw-only analysis
+# regeneration from a fresh clone is required.

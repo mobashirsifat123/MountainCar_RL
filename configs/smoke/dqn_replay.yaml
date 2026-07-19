@@ -1,0 +1,24 @@
+extends: ../base/dqn_replay.yaml
+experiment:
+  name: dqn_replay_smoke
+  condition: dqn_replay
+  episodes: 3
+environment:
+  max_episode_steps: 50
+agent:
+  hidden_sizes: [32, 32]
+  learning_rate: 0.001
+  epsilon:
+    end: 0.1
+    decay_steps: 150
+  target_update_frequency: 25
+  replay_capacity: 256
+  batch_size: 16
+  warmup_steps: 16
+training:
+  validation_interval_episodes: 1
+logging:
+  output_dir: results/raw/smoke/dqn_replay_seed0
+  checkpoint_dir: checkpoints/smoke/dqn_replay_seed0
+evaluation:
+  validation_episode_seeds: [1000, 1001]

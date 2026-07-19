@@ -1,0 +1,59 @@
+{
+  "algorithm": "dqn",
+  "checkpoint": "checkpoints/best/dqn_replay_shaped_seed0/best.pt",
+  "checkpoint_sha256": "f2ea36957fb18f178b8e1d58100a755933270451f8864fdf272c108c100271b0",
+  "checkpoint_type": "best_validation",
+  "condition": "dqn_replay_shaped",
+  "configuration": "checkpoints/best/dqn_replay_shaped_seed0/config.snapshot.json",
+  "configuration_hash": "c8e0cf3ca944d5b65552eb93f5c44c2d090215eb2bb8add20f0a8ed72112e156",
+  "final_evaluation_metric": {
+    "assignment_success_rate": 0.0,
+    "environment_completion_rate": 1.0,
+    "episode_seeds": [
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "episodes": 20,
+    "mean_original_environment_return": -173.1,
+    "median_steps_among_completions": 171.0,
+    "objective": "original MountainCar-v0 reward and goal"
+  },
+  "loading_command": "uv run --python 3.12 mountaincar-evaluate --config checkpoints/best/dqn_replay_shaped_seed0/config.snapshot.json --split validation --episodes 2 --checkpoint checkpoints/best/dqn_replay_shaped_seed0/best.pt --output-dir results/reproduction/dqn_replay_shaped_seed0_validation --capture-trajectories",
+  "schema_version": 1,
+  "training_seed": 0,
+  "validation_metric": {
+    "assignment_success_rate": 0.0,
+    "environment_completion_rate": 1.0,
+    "environment_steps": 30138,
+    "episode_length_std": 3.3507461855533016,
+    "episodes": 20,
+    "mean_episode_return": -169.35,
+    "mean_steps_among_completions": 169.35,
+    "median_steps_among_completions": 168.0,
+    "score": [
+      0.0,
+      1.0,
+      -168.0,
+      -3.3507461855533016
+    ],
+    "validation_after_episode": 155
+  }
+}

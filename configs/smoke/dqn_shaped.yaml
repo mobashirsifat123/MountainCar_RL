@@ -1,0 +1,10 @@
+extends: dqn_replay.yaml
+experiment:
+  name: dqn_replay_shaped_smoke
+  condition: dqn_replay_shaped
+reward_shaping:
+  enabled: true
+  beta: 0.5
+logging:
+  output_dir: results/raw/smoke/dqn_replay_shaped_seed0
+  checkpoint_dir: checkpoints/smoke/dqn_replay_shaped_seed0

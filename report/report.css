@@ -1,0 +1,144 @@
+@page {
+  size: A4;
+  margin: 15mm 16mm 17mm 16mm;
+  @bottom-center {
+    content: counter(page);
+    color: #555;
+    font-size: 8pt;
+  }
+}
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #171717;
+  font-size: 9.2pt;
+  line-height: 1.34;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: #16324f;
+  font-size: 21pt;
+  line-height: 1.12;
+  margin: 0 0 5mm 0;
+}
+
+h2 {
+  color: #16324f;
+  font-size: 13.5pt;
+  margin: 5mm 0 2mm 0;
+  break-after: avoid;
+}
+
+h3 {
+  color: #294861;
+  font-size: 10.5pt;
+  margin: 3mm 0 1.5mm 0;
+  break-after: avoid;
+}
+
+p {
+  margin: 0 0 2.4mm 0;
+  orphans: 3;
+  widows: 3;
+}
+
+ul,
+ol {
+  margin: 1.5mm 0 2.5mm 5mm;
+  padding-left: 4mm;
+}
+
+li {
+  margin-bottom: 1mm;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 118mm;
+  margin: 2mm auto 1.5mm auto;
+  object-fit: contain;
+}
+
+p:has(> img) {
+  break-inside: avoid;
+  margin-bottom: 1mm;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8pt;
+  margin: 2mm 0 3mm 0;
+  break-inside: avoid;
+}
+
+th,
+td {
+  border: 0.35pt solid #a9b3bc;
+  padding: 1.2mm 1.5mm;
+  vertical-align: top;
+}
+
+th {
+  background: #eaf0f5;
+  color: #16324f;
+  font-weight: 600;
+}
+
+code {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: #f3f5f7;
+  padding: 0.15em 0.25em;
+  border-radius: 2px;
+}
+
+pre {
+  background: #f3f5f7;
+  border-left: 2pt solid #6d879d;
+  padding: 2.5mm;
+  font-size: 7.5pt;
+  line-height: 1.25;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  break-inside: avoid;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+a {
+  color: #1c5d8c;
+  text-decoration: none;
+}
+
+blockquote {
+  border-left: 2pt solid #9badbc;
+  color: #3d4952;
+  margin: 2mm 0;
+  padding-left: 3mm;
+}
+
+.math {
+  font-family: "Times New Roman", Times, serif;
+}
+
+math {
+  font-family: "Times New Roman", Times, serif;
+  margin: 1.5mm auto;
+}
+
+annotation {
+  display: none !important;
+}
+
+section.level1:first-of-type > h1 {
+  margin-top: 0;
+}

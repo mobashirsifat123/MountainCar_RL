@@ -1,0 +1,6 @@
+extends: dqn_replay.yaml
+experiment: {name: dqn_replay_shaped_full, condition: dqn_replay_shaped}
+reward_shaping: {enabled: true, beta: 0.5, eta: 0.5, energy_scale: 0.9}
+logging:
+  output_dir: results/raw/full/dqn_replay_shaped_seed0
+  checkpoint_dir: checkpoints/full/dqn_replay_shaped_seed0

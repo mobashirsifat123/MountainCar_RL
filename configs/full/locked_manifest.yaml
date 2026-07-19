@@ -1,0 +1,24 @@
+schema_version: 1
+status: locked
+locked_after_validation: true
+training_seeds: [0, 1, 2, 3, 4]
+conditions:
+  random:
+    config: full/random.yaml
+    resolved_config_hash: 7cc8daf3bdbd6464b803d226d1ccea7074c30b283ebc01476bb246facbfa7acd
+  sarsa_lambda:
+    config: full/sarsa_lambda.yaml
+    resolved_config_hash: c96f6ccceeeaaa97935cc403cfed639bbb240f345c335ab8885b0b45df1c505c
+  dqn_no_replay:
+    config: full/dqn_no_replay.yaml
+    resolved_config_hash: f014997d9ffacbc309b7ecb4e26c8161c9e89ff4a18eb2fa081b0eda5396aaa3
+  dqn_replay:
+    config: full/dqn_replay.yaml
+    resolved_config_hash: 70ea14e8093f5151beabc6440bfa5a34e7c63353f00824b8acfd7c045bcfc41e
+  dqn_replay_shaped:
+    config: full/dqn_shaped.yaml
+    resolved_config_hash: 7b44dfc9f534f091509304c055cb8da1427d41a2d3974fede794ec1a5ddae2c6
+  dqn_replay_fast_decay:
+    config: full/dqn_fast_decay.yaml
+    resolved_config_hash: a945d65ddf25ffdc769fe8104da4d2c736dc138959f3cf5b9ff89bcefd0d3dfd
+final_test_seed_file: full/final_test.yaml

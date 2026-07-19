@@ -1,0 +1,4 @@
+extends: moderate.yaml
+experiment: {name: tuning_shaping_eta_low_seed0, condition: dqn_replay_shaped_eta_low}
+reward_shaping: {eta: 0.25}
+logging: {output_dir: results/raw/tuning/shaping/eta_low_seed0, checkpoint_dir: checkpoints/tuning/shaping/eta_low_seed0}

@@ -1,0 +1,491 @@
+{
+  "controlled_interventions": [
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.1,
+      "best_environment_steps": 40000,
+      "best_median_completed_steps": 178.0,
+      "final_replay_coverage_fraction": 0.4375,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": 40000,
+      "intervention": "epsilon_slow",
+      "planned_environment_interactions": 60000,
+      "training_seed": 0
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.0,
+      "best_environment_steps": 10000,
+      "best_median_completed_steps": null,
+      "final_replay_coverage_fraction": 0.32,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": null,
+      "intervention": "epsilon_slow",
+      "planned_environment_interactions": 60000,
+      "training_seed": 1
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.0,
+      "best_environment_steps": 10000,
+      "best_median_completed_steps": null,
+      "final_replay_coverage_fraction": 0.56,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": null,
+      "intervention": "warmup_long",
+      "planned_environment_interactions": 60000,
+      "training_seed": 0
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.0,
+      "best_environment_steps": 10000,
+      "best_median_completed_steps": null,
+      "final_replay_coverage_fraction": 0.4325,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": null,
+      "intervention": "warmup_long",
+      "planned_environment_interactions": 60000,
+      "training_seed": 1
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.05,
+      "best_environment_steps": 30108,
+      "best_median_completed_steps": 193.0,
+      "final_replay_coverage_fraction": 0.6275,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": 30108,
+      "intervention": "learning_rate_small",
+      "planned_environment_interactions": 60000,
+      "training_seed": 0
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.0,
+      "best_environment_steps": 10000,
+      "best_median_completed_steps": null,
+      "final_replay_coverage_fraction": 0.415,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": null,
+      "intervention": "learning_rate_small",
+      "planned_environment_interactions": 60000,
+      "training_seed": 1
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.85,
+      "best_environment_steps": 60000,
+      "best_median_completed_steps": 153.0,
+      "final_replay_coverage_fraction": 0.645,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": 60000,
+      "intervention": "target_update_slow",
+      "planned_environment_interactions": 60000,
+      "training_seed": 0
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.0,
+      "best_environment_steps": 10000,
+      "best_median_completed_steps": null,
+      "final_replay_coverage_fraction": 0.4525,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": null,
+      "intervention": "target_update_slow",
+      "planned_environment_interactions": 60000,
+      "training_seed": 1
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0062034500711859045,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 1.0,
+      "best_environment_steps": 30138,
+      "best_median_completed_steps": 168.0,
+      "final_replay_coverage_fraction": 0.725,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": 20183,
+      "intervention": "shaping_moderate",
+      "planned_environment_interactions": 60000,
+      "training_seed": 0
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.007023214741149172,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.05,
+      "best_environment_steps": 30197,
+      "best_median_completed_steps": 179.0,
+      "final_replay_coverage_fraction": 0.745,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": 30197,
+      "intervention": "shaping_moderate",
+      "planned_environment_interactions": 60000,
+      "training_seed": 1
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 1.0,
+      "best_environment_steps": 40000,
+      "best_median_completed_steps": 132.5,
+      "final_replay_coverage_fraction": 0.445,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": 40000,
+      "intervention": "budget_long",
+      "planned_environment_interactions": 120000,
+      "training_seed": 0
+    },
+    {
+      "absolute_shaping_to_environment_ratio": 0.0,
+      "best_assignment_success_rate": 0.0,
+      "best_completion_rate": 0.0,
+      "best_environment_steps": 10000,
+      "best_median_completed_steps": null,
+      "final_replay_coverage_fraction": 0.2575,
+      "first_validation_assignment_success_step": null,
+      "first_validation_completion_step": null,
+      "intervention": "budget_long",
+      "planned_environment_interactions": 120000,
+      "training_seed": 1
+    }
+  ],
+  "corrected_configuration_locked": false,
+  "diagnostic_marks": {
+    "environment_steps": [
+      6000,
+      15000,
+      30000,
+      60000
+    ],
+    "fractions_of_60000": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "recent_window_episodes": 10,
+    "replay_coverage_grid": [
+      20,
+      20
+    ]
+  },
+  "final_test_used": false,
+  "interventions_with_strict_success_in_both_seeds": [],
+  "reference_conditions": {
+    "dqn_no_replay": {
+      "marks": {
+        "15000": {
+          "action_fraction_mean": [
+            0.32292,
+            0.32122666666666666,
+            0.35585333333333335
+          ],
+          "epsilon_mean": 0.2875000000000001,
+          "recent_10_mean_gradient_norm": 1.1349834005052966,
+          "recent_10_mean_q_value": -13.245166181945802,
+          "recent_10_mean_update_metric": 0.0078020632501294125,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.01579324947670102,
+          "recent_10_median_maximum_position_mean": -0.31406091451644896,
+          "replay_coverage_mean": null
+        },
+        "30000": {
+          "action_fraction_mean": [
+            0.3660169081479003,
+            0.3178091662483966,
+            0.3161739256037031
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 4.821684006968436,
+          "recent_10_mean_q_value": -23.277525793248955,
+          "recent_10_mean_update_metric": 0.06225397829650422,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.020479001570492983,
+          "recent_10_median_maximum_position_mean": -0.358034211397171,
+          "replay_coverage_mean": null
+        },
+        "6000": {
+          "action_fraction_mean": [
+            0.33203333333333335,
+            0.33063333333333333,
+            0.3373333333333333
+          ],
+          "epsilon_mean": 0.7150000000000001,
+          "recent_10_mean_gradient_norm": 0.5544913248517,
+          "recent_10_mean_q_value": -5.244014047312737,
+          "recent_10_mean_update_metric": 0.00782524189845185,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.013444127608090639,
+          "recent_10_median_maximum_position_mean": -0.3778252065181732,
+          "replay_coverage_mean": null
+        },
+        "60000": {
+          "action_fraction_mean": [
+            0.32871,
+            0.36626,
+            0.30502999999999997
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 6.485775420700195,
+          "recent_10_mean_q_value": -39.15344438133113,
+          "recent_10_mean_update_metric": 0.10214725537354055,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.022844547219574452,
+          "recent_10_median_maximum_position_mean": -0.26438325345516206,
+          "replay_coverage_mean": null
+        }
+      },
+      "training_seed_count": 5
+    },
+    "dqn_replay": {
+      "marks": {
+        "15000": {
+          "action_fraction_mean": [
+            0.30504,
+            0.29316,
+            0.4018
+          ],
+          "epsilon_mean": 0.2875000000000001,
+          "recent_10_mean_gradient_norm": 0.22156949901831685,
+          "recent_10_mean_q_value": -12.562903844165803,
+          "recent_10_mean_update_metric": 0.004114247502151034,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.009428505133837462,
+          "recent_10_median_maximum_position_mean": -0.36080171465873717,
+          "replay_coverage_mean": 0.236
+        },
+        "30000": {
+          "action_fraction_mean": [
+            0.26872,
+            0.24166666666666667,
+            0.48961333333333334
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.314893739240081,
+          "recent_10_mean_q_value": -24.7745377614975,
+          "recent_10_mean_update_metric": 0.0029967737382850376,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.01849887575954199,
+          "recent_10_median_maximum_position_mean": -0.25509800389409065,
+          "replay_coverage_mean": 0.371
+        },
+        "6000": {
+          "action_fraction_mean": [
+            0.32966666666666666,
+            0.3325666666666667,
+            0.33776666666666666
+          ],
+          "epsilon_mean": 0.7150000000000001,
+          "recent_10_mean_gradient_norm": 0.12411175168917979,
+          "recent_10_mean_q_value": -4.308565584158897,
+          "recent_10_mean_update_metric": 0.005506945858798463,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.01169812623411417,
+          "recent_10_median_maximum_position_mean": -0.4040513336658478,
+          "replay_coverage_mean": 0.124
+        },
+        "60000": {
+          "action_fraction_mean": [
+            0.31785,
+            0.26625,
+            0.4159
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.35706302106140647,
+          "recent_10_mean_q_value": -44.3069547832489,
+          "recent_10_mean_update_metric": 0.001653536950619764,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.019854489341378213,
+          "recent_10_median_maximum_position_mean": -0.3549144357442856,
+          "replay_coverage_mean": 0.4175
+        }
+      },
+      "training_seed_count": 5
+    },
+    "dqn_replay_fast_decay": {
+      "marks": {
+        "15000": {
+          "action_fraction_mean": [
+            0.4491828729263895,
+            0.2699924222802307,
+            0.2808247047933799
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.2293296807439523,
+          "recent_10_mean_q_value": -12.508592432007081,
+          "recent_10_mean_update_metric": 0.008168607043724768,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.029739004839211703,
+          "recent_10_median_maximum_position_mean": -0.12228169050067664,
+          "replay_coverage_mean": 0.5705
+        },
+        "30000": {
+          "action_fraction_mean": [
+            0.3895414549876774,
+            0.27698126864721545,
+            0.33347727636510716
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.34861088588461264,
+          "recent_10_mean_q_value": -24.516548153994858,
+          "recent_10_mean_update_metric": 0.007927090322202124,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.041645831987261774,
+          "recent_10_median_maximum_position_mean": -0.0002624962013214827,
+          "replay_coverage_mean": 0.588
+        },
+        "6000": {
+          "action_fraction_mean": [
+            0.48110692716008774,
+            0.28328958071497884,
+            0.23560349212493337
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.12922931406341176,
+          "recent_10_mean_q_value": -4.298412790386246,
+          "recent_10_mean_update_metric": 0.006989207175102485,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.029562759306281806,
+          "recent_10_median_maximum_position_mean": -0.18131499141454696,
+          "replay_coverage_mean": 0.47500000000000003
+        },
+        "60000": {
+          "action_fraction_mean": [
+            0.34618666666666664,
+            0.25578333333333336,
+            0.39803
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.7760853034045113,
+          "recent_10_mean_q_value": -42.38821171594752,
+          "recent_10_mean_update_metric": 0.044745958301125224,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.042380196042358875,
+          "recent_10_median_maximum_position_mean": 0.22169142663478852,
+          "replay_coverage_mean": 0.5945
+        }
+      },
+      "training_seed_count": 5
+    },
+    "dqn_replay_shaped": {
+      "marks": {
+        "15000": {
+          "action_fraction_mean": [
+            0.3273335682505784,
+            0.27875846947855487,
+            0.3939079622708667
+          ],
+          "epsilon_mean": 0.2876520000000001,
+          "recent_10_mean_gradient_norm": 0.2187762022223941,
+          "recent_10_mean_q_value": -12.519321685911262,
+          "recent_10_mean_update_metric": 0.004034440246798921,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.022313885297626256,
+          "recent_10_median_maximum_position_mean": -0.19927724450826645,
+          "replay_coverage_mean": 0.344
+        },
+        "30000": {
+          "action_fraction_mean": [
+            0.33658530885963384,
+            0.2244500708157046,
+            0.4389646203246616
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.29933236931757246,
+          "recent_10_mean_q_value": -24.678992917363686,
+          "recent_10_mean_update_metric": 0.010972768181886665,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.036316632945090535,
+          "recent_10_median_maximum_position_mean": 0.01524683078750968,
+          "replay_coverage_mean": 0.5245
+        },
+        "6000": {
+          "action_fraction_mean": [
+            0.33716666666666667,
+            0.3294666666666667,
+            0.33336666666666664
+          ],
+          "epsilon_mean": 0.7150000000000001,
+          "recent_10_mean_gradient_norm": 0.12339278104340774,
+          "recent_10_mean_q_value": -4.290071567487717,
+          "recent_10_mean_update_metric": 0.00545444232265786,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.015996163990348578,
+          "recent_10_median_maximum_position_mean": -0.3600565388798714,
+          "replay_coverage_mean": 0.161
+        },
+        "60000": {
+          "action_fraction_mean": [
+            0.3309033333333333,
+            0.23502333333333333,
+            0.4340733333333333
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": 0.5053995466263641,
+          "recent_10_mean_q_value": -43.793848290876845,
+          "recent_10_mean_update_metric": 0.023504632520329596,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.03058745004236698,
+          "recent_10_median_maximum_position_mean": 0.011520832777023315,
+          "replay_coverage_mean": 0.5885
+        }
+      },
+      "training_seed_count": 5
+    },
+    "sarsa_lambda": {
+      "marks": {
+        "15000": {
+          "action_fraction_mean": [
+            0.36299750712915485,
+            0.2837394067226977,
+            0.35326308614814744
+          ],
+          "epsilon_mean": 0.28990350000000004,
+          "recent_10_mean_gradient_norm": null,
+          "recent_10_mean_q_value": -48.686956353540474,
+          "recent_10_mean_update_metric": -0.1732044287189747,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.05291378945112228,
+          "recent_10_median_maximum_position_mean": 0.2516132593154907,
+          "replay_coverage_mean": null
+        },
+        "30000": {
+          "action_fraction_mean": [
+            0.369151996055304,
+            0.2079889793449992,
+            0.4228590245996968
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": null,
+          "recent_10_mean_q_value": -45.09482813589206,
+          "recent_10_mean_update_metric": -0.02322808770482013,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.05229511559009552,
+          "recent_10_median_maximum_position_mean": 0.5089922249317169,
+          "replay_coverage_mean": null
+        },
+        "6000": {
+          "action_fraction_mean": [
+            0.3502,
+            0.3058666666666667,
+            0.3439333333333333
+          ],
+          "epsilon_mean": 0.7150000000000001,
+          "recent_10_mean_gradient_norm": null,
+          "recent_10_mean_q_value": -55.21499781861545,
+          "recent_10_mean_update_metric": -0.15259271156222115,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.030743866600096224,
+          "recent_10_median_maximum_position_mean": -0.18274039551615714,
+          "replay_coverage_mean": null
+        },
+        "60000": {
+          "action_fraction_mean": [
+            0.3679766666666667,
+            0.16058,
+            0.4714433333333333
+          ],
+          "epsilon_mean": 0.050000000000000044,
+          "recent_10_mean_gradient_norm": null,
+          "recent_10_mean_q_value": -43.59810339335361,
+          "recent_10_mean_update_metric": -0.02670316537596323,
+          "recent_10_median_maximum_absolute_velocity_mean": 0.04631103910505772,
+          "recent_10_median_maximum_position_mean": 0.5080546736717224,
+          "replay_coverage_mean": null
+        }
+      },
+      "training_seed_count": 5
+    }
+  },
+  "schema_version": 1,
+  "split": "training_and_validation_only"
+}

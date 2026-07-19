@@ -1,0 +1,951 @@
+{
+  "comparison_basis": "fully resolved inherited configurations",
+  "groups": {
+    "locked_full_conditions": {
+      "candidates": {
+        "no_replay": {
+          "difference_count": 7,
+          "differences": [
+            {
+              "candidate": 1,
+              "candidate_missing": false,
+              "key": "agent.batch_size",
+              "reference": 64,
+              "reference_missing": false
+            },
+            {
+              "candidate": false,
+              "candidate_missing": false,
+              "key": "agent.use_replay",
+              "reference": true,
+              "reference_missing": false
+            },
+            {
+              "candidate": 0,
+              "candidate_missing": false,
+              "key": "agent.warmup_steps",
+              "reference": 1000,
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_no_replay",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_no_replay_full",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/full/dqn_no_replay_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/full/dqn_no_replay_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "full/dqn_no_replay.yaml",
+          "resolved_sha256": "f014997d9ffacbc309b7ecb4e26c8161c9e89ff4a18eb2fa081b0eda5396aaa3"
+        },
+        "random": {
+          "difference_count": 25,
+          "differences": [
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.batch_size",
+              "reference": 64,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.epsilon",
+              "reference": {
+                "decay_steps": 20000,
+                "end": 0.05,
+                "start": 1.0
+              },
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.gamma",
+              "reference": 0.99,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.gradient_clip_norm",
+              "reference": 10.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.hidden_sizes",
+              "reference": [
+                64,
+                64
+              ],
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.learning_rate",
+              "reference": 0.0005,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.replay_capacity",
+              "reference": 50000,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.target_update_frequency",
+              "reference": 500,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.tau",
+              "reference": 1.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": "random",
+              "candidate_missing": false,
+              "key": "agent.type",
+              "reference": "dqn",
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.update_frequency",
+              "reference": 2,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.use_replay",
+              "reference": true,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.warmup_steps",
+              "reference": 1000,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "diagnostics",
+              "reference": {
+                "replay_coverage_bins": [
+                  20,
+                  20
+                ],
+                "shaping_dominance_ratio": 0.5,
+                "valley_center_position": -0.5235987755982988,
+                "valley_position_radius": 0.2,
+                "valley_velocity_threshold": 0.025
+              },
+              "reference_missing": false
+            },
+            {
+              "candidate": "random",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": 100,
+              "candidate_missing": false,
+              "key": "experiment.episodes",
+              "reference": 4000,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "experiment.max_environment_steps",
+              "reference": 60000,
+              "reference_missing": false
+            },
+            {
+              "candidate": "random_policy_full",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/full/random_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "logging.record_training_trajectories",
+              "reference": false,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "logging.record_validation_trajectories",
+              "reference": true,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "reproducibility.device",
+              "reference": "cpu",
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "reward_shaping",
+              "reference": {
+                "beta": 0.0,
+                "enabled": false,
+                "energy_scale": 0.9,
+                "eta": 0.5,
+                "max_abs_shaping": 2.0,
+                "method": "energy_deficit_potential",
+                "target_energy": null,
+                "velocity_max": 0.07
+              },
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "training",
+              "reference": {
+                "snapshot_interval_episodes": 50,
+                "validation_interval_episodes": 25,
+                "validation_interval_steps": 10000
+              },
+              "reference_missing": false
+            }
+          ],
+          "path": "full/random.yaml",
+          "resolved_sha256": "7cc8daf3bdbd6464b803d226d1ccea7074c30b283ebc01476bb246facbfa7acd"
+        },
+        "rapid_decay": {
+          "difference_count": 5,
+          "differences": [
+            {
+              "candidate": 200,
+              "candidate_missing": false,
+              "key": "agent.epsilon.decay_steps",
+              "reference": 20000,
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_fast_decay",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_fast_decay_full",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/full/dqn_replay_fast_decay_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/full/dqn_replay_fast_decay_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "full/dqn_fast_decay.yaml",
+          "resolved_sha256": "a945d65ddf25ffdc769fe8104da4d2c736dc138959f3cf5b9ff89bcefd0d3dfd"
+        },
+        "sarsa_lambda": {
+          "difference_count": 24,
+          "differences": [
+            {
+              "candidate": 0.4,
+              "candidate_missing": false,
+              "key": "agent.alpha",
+              "reference": null,
+              "reference_missing": true
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.batch_size",
+              "reference": 64,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.gradient_clip_norm",
+              "reference": 10.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.hidden_sizes",
+              "reference": [
+                64,
+                64
+              ],
+              "reference_missing": false
+            },
+            {
+              "candidate": 0.9,
+              "candidate_missing": false,
+              "key": "agent.lambda",
+              "reference": null,
+              "reference_missing": true
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.learning_rate",
+              "reference": 0.0005,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.replay_capacity",
+              "reference": 50000,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.target_update_frequency",
+              "reference": 500,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.tau",
+              "reference": 1.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": {
+                "num_tilings": 16,
+                "tiles_per_dim": [
+                  8,
+                  8
+                ]
+              },
+              "candidate_missing": false,
+              "key": "agent.tile_coder",
+              "reference": null,
+              "reference_missing": true
+            },
+            {
+              "candidate": 10.0,
+              "candidate_missing": false,
+              "key": "agent.trace_clip",
+              "reference": null,
+              "reference_missing": true
+            },
+            {
+              "candidate": "replacing",
+              "candidate_missing": false,
+              "key": "agent.trace_type",
+              "reference": null,
+              "reference_missing": true
+            },
+            {
+              "candidate": "sarsa_lambda",
+              "candidate_missing": false,
+              "key": "agent.type",
+              "reference": "dqn",
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.update_frequency",
+              "reference": 2,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.use_replay",
+              "reference": true,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "agent.warmup_steps",
+              "reference": 1000,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "diagnostics",
+              "reference": {
+                "replay_coverage_bins": [
+                  20,
+                  20
+                ],
+                "shaping_dominance_ratio": 0.5,
+                "valley_center_position": -0.5235987755982988,
+                "valley_position_radius": 0.2,
+                "valley_velocity_threshold": 0.025
+              },
+              "reference_missing": false
+            },
+            {
+              "candidate": "sarsa_lambda",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "sarsa_lambda_full",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/full/sarsa_lambda_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/full/sarsa_lambda_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "logging.record_trajectories",
+              "reference": true,
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "reward_shaping",
+              "reference": {
+                "beta": 0.0,
+                "enabled": false,
+                "energy_scale": 0.9,
+                "eta": 0.5,
+                "max_abs_shaping": 2.0,
+                "method": "energy_deficit_potential",
+                "target_energy": null,
+                "velocity_max": 0.07
+              },
+              "reference_missing": false
+            },
+            {
+              "candidate": null,
+              "candidate_missing": true,
+              "key": "training.validation_interval_episodes",
+              "reference": 25,
+              "reference_missing": false
+            }
+          ],
+          "path": "full/sarsa_lambda.yaml",
+          "resolved_sha256": "c96f6ccceeeaaa97935cc403cfed639bbb240f345c335ab8885b0b45df1c505c"
+        },
+        "shaped": {
+          "difference_count": 6,
+          "differences": [
+            {
+              "candidate": "dqn_replay_shaped",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_shaped_full",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/full/dqn_replay_shaped_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/full/dqn_replay_shaped_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": 0.5,
+              "candidate_missing": false,
+              "key": "reward_shaping.beta",
+              "reference": 0.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": true,
+              "candidate_missing": false,
+              "key": "reward_shaping.enabled",
+              "reference": false,
+              "reference_missing": false
+            }
+          ],
+          "path": "full/dqn_shaped.yaml",
+          "resolved_sha256": "7b44dfc9f534f091509304c055cb8da1427d41a2d3974fede794ec1a5ddae2c6"
+        }
+      },
+      "reference": {
+        "path": "full/dqn_replay.yaml",
+        "resolved_sha256": "70ea14e8093f5151beabc6440bfa5a34e7c63353f00824b8acfd7c045bcfc41e"
+      }
+    },
+    "rapid_decay_smoke": {
+      "candidates": {
+        "rapid_decay": {
+          "difference_count": 5,
+          "differences": [
+            {
+              "candidate": 8,
+              "candidate_missing": false,
+              "key": "agent.epsilon.decay_steps",
+              "reference": 150,
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_fast_decay",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_fast_decay_smoke",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_smoke",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/smoke/dqn_replay_fast_decay_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/smoke/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/smoke/dqn_replay_fast_decay_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/smoke/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "smoke/dqn_fast_decay.yaml",
+          "resolved_sha256": "f3a57e6a66b6e43452c2e18d51ad20e473dab75c3d02c0823984d899e678d005"
+        }
+      },
+      "reference": {
+        "path": "smoke/dqn_replay.yaml",
+        "resolved_sha256": "d3c0d60a969a9e0a4644a84582cbccd3031d653ac58f6804b8b23b3cdfc3e74e"
+      }
+    },
+    "rapid_decay_validation": {
+      "candidates": {
+        "rapid_decay": {
+          "difference_count": 5,
+          "differences": [
+            {
+              "candidate": 200,
+              "candidate_missing": false,
+              "key": "agent.epsilon.decay_steps",
+              "reference": 20000,
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_fast_decay",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay_no_shaping",
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_fast_decay_validation_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "shaping_ablation_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/validation/dqn_replay_fast_decay_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/validation/shaping_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/validation/dqn_replay_fast_decay_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/validation/shaping_none_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "sweeps/dqn_fast_decay.yaml",
+          "resolved_sha256": "7274486aee518202fbadf8fac9a643422bb4f99aac12447e6e7e44a2b0745646"
+        }
+      },
+      "reference": {
+        "path": "sweeps/shaping/no_shaping.yaml",
+        "resolved_sha256": "bd3da2c34bbeb5514b6efed589fa95e02a5c34808b5b3f777c5abf5721ece4de"
+      }
+    },
+    "replay_ablation_smoke": {
+      "candidates": {
+        "no_replay": {
+          "difference_count": 7,
+          "differences": [
+            {
+              "candidate": 1,
+              "candidate_missing": false,
+              "key": "agent.batch_size",
+              "reference": 16,
+              "reference_missing": false
+            },
+            {
+              "candidate": false,
+              "candidate_missing": false,
+              "key": "agent.use_replay",
+              "reference": true,
+              "reference_missing": false
+            },
+            {
+              "candidate": 0,
+              "candidate_missing": false,
+              "key": "agent.warmup_steps",
+              "reference": 16,
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_no_replay",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_no_replay_smoke",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_smoke",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/smoke/dqn_no_replay_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/smoke/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/smoke/dqn_no_replay_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/smoke/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "smoke/dqn_no_replay.yaml",
+          "resolved_sha256": "241c63d30f7b932edc27aead2c0b0dbafdbb3af4846041a464d721f4cf3c3d76"
+        }
+      },
+      "reference": {
+        "path": "smoke/dqn_replay.yaml",
+        "resolved_sha256": "d3c0d60a969a9e0a4644a84582cbccd3031d653ac58f6804b8b23b3cdfc3e74e"
+      }
+    },
+    "shaping_smoke": {
+      "candidates": {
+        "moderate": {
+          "difference_count": 6,
+          "differences": [
+            {
+              "candidate": "dqn_replay_shaped",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "dqn_replay_shaped_smoke",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_smoke",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/smoke/dqn_replay_shaped_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/smoke/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/smoke/dqn_replay_shaped_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/smoke/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": 0.5,
+              "candidate_missing": false,
+              "key": "reward_shaping.beta",
+              "reference": 0.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": true,
+              "candidate_missing": false,
+              "key": "reward_shaping.enabled",
+              "reference": false,
+              "reference_missing": false
+            }
+          ],
+          "path": "smoke/dqn_shaped.yaml",
+          "resolved_sha256": "7d8d894819511024bd2d439819f26c9466990b1767cb4be06c81068e6375c5a4"
+        }
+      },
+      "reference": {
+        "path": "smoke/dqn_replay.yaml",
+        "resolved_sha256": "d3c0d60a969a9e0a4644a84582cbccd3031d653ac58f6804b8b23b3cdfc3e74e"
+      }
+    },
+    "shaping_validation": {
+      "candidates": {
+        "moderate": {
+          "difference_count": 6,
+          "differences": [
+            {
+              "candidate": "dqn_replay_shaping_moderate",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay_no_shaping",
+              "reference_missing": false
+            },
+            {
+              "candidate": "shaping_ablation_moderate_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "shaping_ablation_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/validation/shaping_moderate_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/validation/shaping_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/validation/shaping_moderate_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/validation/shaping_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": 0.5,
+              "candidate_missing": false,
+              "key": "reward_shaping.beta",
+              "reference": 0.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": true,
+              "candidate_missing": false,
+              "key": "reward_shaping.enabled",
+              "reference": false,
+              "reference_missing": false
+            }
+          ],
+          "path": "sweeps/shaping/moderate.yaml",
+          "resolved_sha256": "d4d0044f28148ac031272a15a2e3bf336f27964ee44ce67119b8fca58099522d"
+        },
+        "strong": {
+          "difference_count": 6,
+          "differences": [
+            {
+              "candidate": "dqn_replay_shaping_strong",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay_no_shaping",
+              "reference_missing": false
+            },
+            {
+              "candidate": "shaping_ablation_strong_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "shaping_ablation_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/validation/shaping_strong_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/validation/shaping_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/validation/shaping_strong_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/validation/shaping_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": 1.0,
+              "candidate_missing": false,
+              "key": "reward_shaping.beta",
+              "reference": 0.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": true,
+              "candidate_missing": false,
+              "key": "reward_shaping.enabled",
+              "reference": false,
+              "reference_missing": false
+            }
+          ],
+          "path": "sweeps/shaping/strong.yaml",
+          "resolved_sha256": "3c88181228fc0807714abc9f4119d30d19cca23a047579bafa17e6b0f4a11e33"
+        },
+        "weak": {
+          "difference_count": 6,
+          "differences": [
+            {
+              "candidate": "dqn_replay_shaping_weak",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay_no_shaping",
+              "reference_missing": false
+            },
+            {
+              "candidate": "shaping_ablation_weak_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "shaping_ablation_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/validation/shaping_weak_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/validation/shaping_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/validation/shaping_weak_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/validation/shaping_none_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": 0.1,
+              "candidate_missing": false,
+              "key": "reward_shaping.beta",
+              "reference": 0.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": true,
+              "candidate_missing": false,
+              "key": "reward_shaping.enabled",
+              "reference": false,
+              "reference_missing": false
+            }
+          ],
+          "path": "sweeps/shaping/weak.yaml",
+          "resolved_sha256": "720a45ecc823ef3567411f8f2f775b852d9a75d4665450c20b1c9ba365a5a7db"
+        }
+      },
+      "reference": {
+        "path": "sweeps/shaping/no_shaping.yaml",
+        "resolved_sha256": "bd3da2c34bbeb5514b6efed589fa95e02a5c34808b5b3f777c5abf5721ece4de"
+      }
+    }
+  },
+  "manifest": "configs/comparison_manifest.yaml",
+  "schema_version": 1
+}

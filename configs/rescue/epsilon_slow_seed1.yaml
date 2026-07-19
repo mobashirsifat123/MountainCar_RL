@@ -1,0 +1,5 @@
+extends: epsilon_slow_seed0.yaml
+experiment: {name: rescue_epsilon_slow_seed1, training_seed: 1}
+logging:
+  output_dir: results/raw/rescue/epsilon_slow_seed1
+  checkpoint_dir: checkpoints/rescue/epsilon_slow_seed1

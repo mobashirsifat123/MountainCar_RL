@@ -1,0 +1,10 @@
+extends: no_shaping.yaml
+experiment:
+  name: shaping_ablation_strong_seed0
+  condition: dqn_replay_shaping_strong
+reward_shaping:
+  enabled: true
+  beta: 1.0
+logging:
+  output_dir: results/raw/validation/shaping_strong_seed0
+  checkpoint_dir: checkpoints/validation/shaping_strong_seed0

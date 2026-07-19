@@ -1,0 +1,4 @@
+extends: base.yaml
+experiment: {name: tuning_sarsa_resolution_12_seed0}
+agent: {tile_coder: {tiles_per_dim: [12, 12]}}
+logging: {output_dir: results/raw/tuning/sarsa/resolution_12_seed0, checkpoint_dir: checkpoints/tuning/sarsa/resolution_12_seed0}

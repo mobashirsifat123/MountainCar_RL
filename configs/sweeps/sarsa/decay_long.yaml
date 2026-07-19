@@ -1,0 +1,4 @@
+extends: base.yaml
+experiment: {name: tuning_sarsa_decay_long_seed0}
+agent: {epsilon: {decay_steps: 40000}}
+logging: {output_dir: results/raw/tuning/sarsa/decay_long_seed0, checkpoint_dir: checkpoints/tuning/sarsa/decay_long_seed0}

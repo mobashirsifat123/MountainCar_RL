@@ -1,0 +1,72 @@
+{
+  "agent": {
+    "alpha": 0.4,
+    "epsilon": {
+      "decay_steps": 20000,
+      "end": 0.05,
+      "start": 1.0
+    },
+    "gamma": 0.99,
+    "lambda": 0.9,
+    "tile_coder": {
+      "num_tilings": 16,
+      "tiles_per_dim": [
+        8,
+        8
+      ]
+    },
+    "trace_clip": 10.0,
+    "trace_type": "replacing",
+    "type": "sarsa_lambda"
+  },
+  "environment": {
+    "id": "MountainCar-v0",
+    "max_episode_steps": 200
+  },
+  "evaluation": {
+    "validation_episode_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019
+    ]
+  },
+  "experiment": {
+    "condition": "sarsa_lambda",
+    "episodes": 4000,
+    "max_environment_steps": 60000,
+    "name": "sarsa_lambda_full_seed1",
+    "training_seed": 1
+  },
+  "logging": {
+    "checkpoint_dir": "checkpoints/full/sarsa_lambda_seed1",
+    "output_dir": "results/raw/full/sarsa_lambda_seed1",
+    "record_training_trajectories": false,
+    "record_validation_trajectories": true
+  },
+  "reproducibility": {
+    "deterministic_torch": true,
+    "device": "cpu"
+  },
+  "schema_version": 1,
+  "training": {
+    "snapshot_interval_episodes": 50,
+    "validation_interval_steps": 10000
+  }
+}

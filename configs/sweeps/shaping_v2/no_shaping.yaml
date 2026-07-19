@@ -1,0 +1,3 @@
+extends: ../dqn/base.yaml
+experiment: {name: tuning_shaping_none_seed0, condition: dqn_replay}
+logging: {output_dir: results/raw/tuning/shaping/none_seed0, checkpoint_dir: checkpoints/tuning/shaping/none_seed0}

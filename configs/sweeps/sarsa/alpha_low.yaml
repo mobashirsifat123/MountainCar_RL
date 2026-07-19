@@ -1,0 +1,4 @@
+extends: base.yaml
+experiment: {name: tuning_sarsa_alpha_low_seed0}
+agent: {alpha: 0.2}
+logging: {output_dir: results/raw/tuning/sarsa/alpha_low_seed0, checkpoint_dir: checkpoints/tuning/sarsa/alpha_low_seed0}

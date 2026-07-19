@@ -1,0 +1,10 @@
+extends: ../full/dqn_replay.yaml
+experiment:
+  name: rescue_budget_long_seed0
+  condition: rescue_budget_long
+  training_seed: 0
+  episodes: 8000
+  max_environment_steps: 120000
+logging:
+  output_dir: results/raw/rescue/budget_long_seed0
+  checkpoint_dir: checkpoints/rescue/budget_long_seed0

@@ -1,0 +1,96 @@
+{
+  "agent": {
+    "batch_size": 64,
+    "epsilon": {
+      "decay_steps": 20000,
+      "end": 0.05,
+      "start": 1.0
+    },
+    "gamma": 0.99,
+    "gradient_clip_norm": 10.0,
+    "hidden_sizes": [
+      64,
+      64
+    ],
+    "learning_rate": 0.0005,
+    "replay_capacity": 50000,
+    "target_update_frequency": 500,
+    "tau": 1.0,
+    "type": "dqn",
+    "update_frequency": 2,
+    "use_replay": true,
+    "warmup_steps": 1000
+  },
+  "diagnostics": {
+    "replay_coverage_bins": [
+      20,
+      20
+    ],
+    "shaping_dominance_ratio": 0.5,
+    "valley_center_position": -0.5235987755982988,
+    "valley_position_radius": 0.2,
+    "valley_velocity_threshold": 0.025
+  },
+  "environment": {
+    "id": "MountainCar-v0",
+    "max_episode_steps": 200
+  },
+  "evaluation": {
+    "validation_episode_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019
+    ]
+  },
+  "experiment": {
+    "condition": "dqn_replay_shaped",
+    "episodes": 4000,
+    "max_environment_steps": 60000,
+    "name": "dqn_replay_shaped_full_seed0",
+    "training_seed": 0
+  },
+  "logging": {
+    "checkpoint_dir": "checkpoints/full/dqn_replay_shaped_seed0",
+    "output_dir": "results/raw/full/dqn_replay_shaped_seed0",
+    "record_training_trajectories": false,
+    "record_trajectories": true,
+    "record_validation_trajectories": true
+  },
+  "reproducibility": {
+    "deterministic_torch": true,
+    "device": "cpu"
+  },
+  "reward_shaping": {
+    "beta": 0.5,
+    "enabled": true,
+    "energy_scale": 0.9,
+    "eta": 0.5,
+    "max_abs_shaping": 2.0,
+    "method": "energy_deficit_potential",
+    "target_energy": null,
+    "velocity_max": 0.07
+  },
+  "schema_version": 1,
+  "training": {
+    "snapshot_interval_episodes": 50,
+    "validation_interval_episodes": 25,
+    "validation_interval_steps": 10000
+  }
+}

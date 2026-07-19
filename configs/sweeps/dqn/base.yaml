@@ -1,0 +1,12 @@
+extends: ../../base/dqn_replay.yaml
+experiment:
+  name: tuning_dqn_base_seed0
+  condition: dqn_replay
+  episodes: 2000
+  max_environment_steps: 60000
+training: {validation_interval_steps: 10000, snapshot_interval_episodes: 50}
+logging:
+  output_dir: results/raw/tuning/dqn/base_seed0
+  checkpoint_dir: checkpoints/tuning/dqn/base_seed0
+  record_training_trajectories: false
+  record_validation_trajectories: false

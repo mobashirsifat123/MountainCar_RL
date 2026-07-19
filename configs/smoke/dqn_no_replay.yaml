@@ -1,0 +1,11 @@
+extends: dqn_replay.yaml
+experiment:
+  name: dqn_no_replay_smoke
+  condition: dqn_no_replay
+agent:
+  use_replay: false
+  batch_size: 1
+  warmup_steps: 0
+logging:
+  output_dir: results/raw/smoke/dqn_no_replay_seed0
+  checkpoint_dir: checkpoints/smoke/dqn_no_replay_seed0

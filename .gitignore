@@ -1,0 +1,102 @@
+# ---- Python environments, caches, build artifacts ----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ---- OS / editor / IDE ----
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Local scratch, build output, temporary directories ----
+output/
+tmp/
+*.log
+*.tmp
+
+# ---- Raw and intermediate experiment artifacts (too large for Git) ----
+# Keep results/figures/, results/tables/, and results/processed/ summaries only.
+results/raw/
+results/intermediate/
+results/videos/
+results/reproduction/
+results/clean_copy/
+# Legacy alternative-CI estimator; not the source of truth (CSV/MD tables are).
+results/processed/final_results.json
+results/processed/tuning/
+
+# ---- Checkpoints: publish only the compact best set ----
+# Track checkpoints/best/ only; exclude all full/intermediate checkpoint trees.
+checkpoints/full/
+checkpoints/smoke/
+checkpoints/rescue/
+checkpoints/tuning/
+checkpoints/validation/
+checkpoints/latest/
+checkpoints/best/**.lock
+
+# ---- Professor-facing bundle and release archive (released separately) ----
+submission/
+MountainCar_RL_Recruitment_Submission.zip
+*.zip
+
+# ---- Secrets (never commit) ----
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.ppk
+secrets.*
+
+# ---- Videos and TensorBoard logs ----
+*.mp4
+*.avi
+*.mov
+events.out.tfevents.*
+
+# ---- Internal development / release-engineering documents ----
+PROGRESS.md
+PLAN.md
+AGENTS.md
+HUMAN_SUBMISSION_CHECKLIST.md
+SECURITY_REVIEW.md
+CLEAN_CLONE_TEST.md
+FINAL_SUBMISSION_STATUS.md
+FINAL_CONSISTENCY_REPORT.md
+GITHUB_RELEASE_COMMANDS.txt
+submission_email.md
+GITHUB_PUBLICATION_PLAN.md
+LARGE_FILE_REPORT.md
+PRE_PUBLICATION_SECURITY_REPORT.md
+PUBLIC_REPOSITORY_MANIFEST.md
+GITHUB_CLEAN_CLONE_REPORT.md
+GITHUB_PUBLISH_COMMANDS.txt
+GITHUB_PUBLICATION_STATUS.md
+
+# ---- Vestigial empty figure dir (report uses results/figures/) ----
+report/figures/

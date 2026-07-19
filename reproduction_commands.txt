@@ -1,0 +1,40 @@
+# MountainCar RL - exact reproduction commands.
+# Run every command from the repository root with Python 3.10+ (3.12 recommended).
+
+# 1. Install the locked Python 3.12 environment.
+uv sync --frozen --python 3.12 --extra dev
+#   Without uv:
+#   python -m venv .venv && . .venv/bin/activate && python -m pip install -r requirements.txt
+
+# 2. Run the complete unit and integration test suite.
+uv run --python 3.12 pytest
+
+# 3. Run short train/evaluate smoke checks for all six conditions (writes only
+#    to smoke output directories; does not touch full results).
+bash scripts/smoke_test.sh
+
+# 4. Train one short selected SARSA model (overwrites smoke artifacts only).
+uv run --python 3.12 mountaincar-train --config configs/smoke/sarsa_lambda.yaml --overwrite
+
+# 5. Evaluate a published best SARSA checkpoint on all 20 fixed held-out seeds.
+#    Uses the checkpoint's own resolved config snapshot and the original reward.
+uv run --python 3.12 mountaincar-evaluate \
+  --config checkpoints/best/sarsa_lambda_seed0/config.snapshot.json \
+  --split final_test \
+  --seeds-config configs/full/final_test.yaml \
+  --checkpoint checkpoints/best/sarsa_lambda_seed0/best.pt \
+  --output-dir results/reproduction/sarsa_lambda_seed0_final_test \
+  --capture-trajectories
+
+# 6. Reproduce the complete locked five-seed suite (expensive; all conditions).
+#    This regenerates results/raw/full/ from scratch.
+bash scripts/run_full_experiments.sh
+
+# 7. Regenerate the final table and four figures from saved raw results.
+#    NOTE: this reads results/raw/full/, which is excluded from Git due to size.
+#    To regenerate figures in a fresh clone, first run step 6, or obtain the
+#    raw evidence archive from the GitHub release, then:
+uv run --python 3.12 python -m mountaincar_rl.analysis.make_all_figures
+
+# 8. Rebuild the professor-facing PDF report from report/report.md.
+uv run --python 3.12 --with weasyprint --with pypdf python scripts/build_report_pdf.py

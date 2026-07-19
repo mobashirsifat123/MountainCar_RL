@@ -1,0 +1,52 @@
+schema_version: 1
+experiment:
+  name: dqn_replay_validation_base
+  condition: dqn_replay
+  training_seed: 0
+  episodes: 300
+environment:
+  id: MountainCar-v0
+  max_episode_steps: 200
+agent:
+  type: dqn
+  use_replay: true
+  hidden_sizes: [64, 64]
+  gamma: 0.99
+  learning_rate: 0.0005
+  epsilon:
+    start: 1.0
+    end: 0.05
+    decay_steps: 20000
+  gradient_clip_norm: 10.0
+  target_update_frequency: 500
+  tau: 1.0
+  replay_capacity: 50000
+  batch_size: 64
+  warmup_steps: 1000
+  update_frequency: 1
+reward_shaping:
+  method: energy_deficit_potential
+  enabled: false
+  beta: 0.0
+  eta: 0.5
+  energy_scale: 0.9
+  target_energy: null
+  velocity_max: 0.07
+  max_abs_shaping: 2.0
+training:
+  validation_interval_episodes: 25
+diagnostics:
+  replay_coverage_bins: [20, 20]
+  valley_center_position: -0.5235987755982988
+  valley_position_radius: 0.20
+  valley_velocity_threshold: 0.025
+  shaping_dominance_ratio: 0.5
+logging:
+  output_dir: results/raw/validation/dqn_replay_seed0
+  checkpoint_dir: checkpoints/validation/dqn_replay_seed0
+  record_trajectories: true
+reproducibility:
+  deterministic_torch: true
+  device: cpu
+evaluation:
+  validation_episode_seeds: [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019]

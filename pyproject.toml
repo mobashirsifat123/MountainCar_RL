@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mountaincar-rl-study"
+version = "0.1.0"
+description = "A reproducible empirical study of on-policy learning, replay, and reward shaping in MountainCar-v0."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "MountainCar RL study contributors" }]
+dependencies = [
+  "gymnasium[classic-control]>=1.0,<2",
+  "matplotlib>=3.7,<4",
+  "numpy>=1.24,<3",
+  "PyYAML>=6,<7",
+  "tomli>=2,<3; python_version < '3.11'",
+  "torch>=2.1,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+]
+
+[project.scripts]
+mountaincar-train = "mountaincar_rl.experiments.train:main"
+mountaincar-evaluate = "mountaincar_rl.experiments.evaluate:main"
+mountaincar-config-diff = "mountaincar_rl.experiments.config_diff:main"
+mountaincar-aggregate-interventions = "mountaincar_rl.analysis.aggregate:main"
+mountaincar-validate-results = "mountaincar_rl.analysis.data_validation:main"
+mountaincar-sweep = "mountaincar_rl.experiments.sweep:main"
+mountaincar-run-suite = "mountaincar_rl.experiments.run_suite:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]

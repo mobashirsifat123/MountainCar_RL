@@ -1,0 +1,32 @@
+schema_version: 1
+groups:
+  shaping_validation:
+    reference: sweeps/shaping/no_shaping.yaml
+    candidates:
+      weak: sweeps/shaping/weak.yaml
+      moderate: sweeps/shaping/moderate.yaml
+      strong: sweeps/shaping/strong.yaml
+  rapid_decay_validation:
+    reference: sweeps/shaping/no_shaping.yaml
+    candidates:
+      rapid_decay: sweeps/dqn_fast_decay.yaml
+  shaping_smoke:
+    reference: smoke/dqn_replay.yaml
+    candidates:
+      moderate: smoke/dqn_shaped.yaml
+  rapid_decay_smoke:
+    reference: smoke/dqn_replay.yaml
+    candidates:
+      rapid_decay: smoke/dqn_fast_decay.yaml
+  replay_ablation_smoke:
+    reference: smoke/dqn_replay.yaml
+    candidates:
+      no_replay: smoke/dqn_no_replay.yaml
+  locked_full_conditions:
+    reference: full/dqn_replay.yaml
+    candidates:
+      random: full/random.yaml
+      sarsa_lambda: full/sarsa_lambda.yaml
+      no_replay: full/dqn_no_replay.yaml
+      shaped: full/dqn_shaped.yaml
+      rapid_decay: full/dqn_fast_decay.yaml

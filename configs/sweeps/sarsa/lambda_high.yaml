@@ -1,0 +1,4 @@
+extends: base.yaml
+experiment: {name: tuning_sarsa_lambda_high_seed0}
+agent: {lambda: 0.95}
+logging: {output_dir: results/raw/tuning/sarsa/lambda_high_seed0, checkpoint_dir: checkpoints/tuning/sarsa/lambda_high_seed0}

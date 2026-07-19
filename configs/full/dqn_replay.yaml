@@ -1,0 +1,16 @@
+extends: ../base/dqn_replay.yaml
+experiment:
+  name: dqn_replay_full
+  condition: dqn_replay
+  episodes: 4000
+  max_environment_steps: 60000
+training: {validation_interval_steps: 10000, snapshot_interval_episodes: 50}
+# Locked after the bounded validation sweep: update_frequency=2 had the best
+# lexicographic validation score (completion before median length).
+agent:
+  update_frequency: 2
+logging:
+  output_dir: results/raw/full/dqn_replay_seed0
+  checkpoint_dir: checkpoints/full/dqn_replay_seed0
+  record_training_trajectories: false
+  record_validation_trajectories: true

@@ -1,0 +1,10 @@
+extends: shaping/no_shaping.yaml
+experiment:
+  name: dqn_replay_fast_decay_validation_seed0
+  condition: dqn_replay_fast_decay
+agent:
+  epsilon:
+    decay_steps: 200
+logging:
+  output_dir: results/raw/validation/dqn_replay_fast_decay_seed0
+  checkpoint_dir: checkpoints/validation/dqn_replay_fast_decay_seed0

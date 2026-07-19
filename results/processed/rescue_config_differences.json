@@ -1,0 +1,281 @@
+{
+  "comparison_basis": "fully resolved inherited configurations",
+  "groups": {
+    "rescue_seed0": {
+      "candidates": {
+        "budget_long": {
+          "difference_count": 6,
+          "differences": [
+            {
+              "candidate": "rescue_budget_long",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": 8000,
+              "candidate_missing": false,
+              "key": "experiment.episodes",
+              "reference": 4000,
+              "reference_missing": false
+            },
+            {
+              "candidate": 120000,
+              "candidate_missing": false,
+              "key": "experiment.max_environment_steps",
+              "reference": 60000,
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_budget_long_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/rescue/budget_long_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/rescue/budget_long_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "budget_long_seed0.yaml",
+          "resolved_sha256": "47e9a956a5df2ee36ab8043206f0e5cd755f8cd262f0f996533afe8178a04b59"
+        },
+        "epsilon_slow": {
+          "difference_count": 5,
+          "differences": [
+            {
+              "candidate": 40000,
+              "candidate_missing": false,
+              "key": "agent.epsilon.decay_steps",
+              "reference": 20000,
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_epsilon_slow",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_epsilon_slow_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/rescue/epsilon_slow_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/rescue/epsilon_slow_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "epsilon_slow_seed0.yaml",
+          "resolved_sha256": "393d5395bd37dd75a627f3986db7fdcdcb2f978b8569d4a26481f4fa05b3a567"
+        },
+        "learning_rate_small": {
+          "difference_count": 5,
+          "differences": [
+            {
+              "candidate": 0.00025,
+              "candidate_missing": false,
+              "key": "agent.learning_rate",
+              "reference": 0.0005,
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_learning_rate_small",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_learning_rate_small_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/rescue/learning_rate_small_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/rescue/learning_rate_small_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "learning_rate_small_seed0.yaml",
+          "resolved_sha256": "85081f86db38d8084d6617039ab62152fb5be5368ee222868180c6b2418a5daa"
+        },
+        "shaping_moderate": {
+          "difference_count": 6,
+          "differences": [
+            {
+              "candidate": "rescue_shaping_moderate",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_shaping_moderate_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/rescue/shaping_moderate_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/rescue/shaping_moderate_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": 0.5,
+              "candidate_missing": false,
+              "key": "reward_shaping.beta",
+              "reference": 0.0,
+              "reference_missing": false
+            },
+            {
+              "candidate": true,
+              "candidate_missing": false,
+              "key": "reward_shaping.enabled",
+              "reference": false,
+              "reference_missing": false
+            }
+          ],
+          "path": "shaping_moderate_seed0.yaml",
+          "resolved_sha256": "0e1fdafde617ebb4d3441a5afaf31caf83f65fd5182796f2984361083ad11361"
+        },
+        "target_update_slow": {
+          "difference_count": 5,
+          "differences": [
+            {
+              "candidate": 1000,
+              "candidate_missing": false,
+              "key": "agent.target_update_frequency",
+              "reference": 500,
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_target_update_slow",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_target_update_slow_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/rescue/target_update_slow_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/rescue/target_update_slow_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "target_update_slow_seed0.yaml",
+          "resolved_sha256": "493ac4273bcb129c0eb0636d63aef33cebe402dd6b6cb71f5c4c2cee9ef2a125"
+        },
+        "warmup_long": {
+          "difference_count": 5,
+          "differences": [
+            {
+              "candidate": 5000,
+              "candidate_missing": false,
+              "key": "agent.warmup_steps",
+              "reference": 1000,
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_warmup_long",
+              "candidate_missing": false,
+              "key": "experiment.condition",
+              "reference": "dqn_replay",
+              "reference_missing": false
+            },
+            {
+              "candidate": "rescue_warmup_long_seed0",
+              "candidate_missing": false,
+              "key": "experiment.name",
+              "reference": "dqn_replay_full",
+              "reference_missing": false
+            },
+            {
+              "candidate": "checkpoints/rescue/warmup_long_seed0",
+              "candidate_missing": false,
+              "key": "logging.checkpoint_dir",
+              "reference": "checkpoints/full/dqn_replay_seed0",
+              "reference_missing": false
+            },
+            {
+              "candidate": "results/raw/rescue/warmup_long_seed0",
+              "candidate_missing": false,
+              "key": "logging.output_dir",
+              "reference": "results/raw/full/dqn_replay_seed0",
+              "reference_missing": false
+            }
+          ],
+          "path": "warmup_long_seed0.yaml",
+          "resolved_sha256": "b75bf03d82bd35df7286fd8519c210a551e493d0be81af17d23ff90f6bd5ede2"
+        }
+      },
+      "reference": {
+        "path": "../full/dqn_replay.yaml",
+        "resolved_sha256": "70ea14e8093f5151beabc6440bfa5a34e7c63353f00824b8acfd7c045bcfc41e"
+      }
+    }
+  },
+  "manifest": "configs/rescue/comparison_manifest.yaml",
+  "schema_version": 1
+}

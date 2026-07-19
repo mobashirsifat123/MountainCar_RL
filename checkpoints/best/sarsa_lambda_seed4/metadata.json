@@ -1,0 +1,59 @@
+{
+  "algorithm": "sarsa_lambda",
+  "checkpoint": "checkpoints/best/sarsa_lambda_seed4/best.pt",
+  "checkpoint_sha256": "67cd0a4fa20bac53c7d89274f5623b0cdfa16c6b6e34b6e4787854352eec3ef6",
+  "checkpoint_type": "best_validation",
+  "condition": "sarsa_lambda",
+  "configuration": "checkpoints/best/sarsa_lambda_seed4/config.snapshot.json",
+  "configuration_hash": "18977e7c0366843e02191c2b05af6d90d5645c4bbb853807402e466d822992ed",
+  "final_evaluation_metric": {
+    "assignment_success_rate": 0.4,
+    "environment_completion_rate": 1.0,
+    "episode_seeds": [
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "episodes": 20,
+    "mean_original_environment_return": -99.3,
+    "median_steps_among_completions": 104.0,
+    "objective": "original MountainCar-v0 reward and goal"
+  },
+  "loading_command": "uv run --python 3.12 mountaincar-evaluate --config checkpoints/best/sarsa_lambda_seed4/config.snapshot.json --split validation --episodes 2 --checkpoint checkpoints/best/sarsa_lambda_seed4/best.pt --output-dir results/reproduction/sarsa_lambda_seed4_validation --capture-trajectories",
+  "schema_version": 1,
+  "training_seed": 4,
+  "validation_metric": {
+    "assignment_success_rate": 0.1,
+    "environment_completion_rate": 1.0,
+    "environment_steps": 40039,
+    "episode_length_std": 4.903060268852505,
+    "episodes": 20,
+    "mean_episode_return": -103.4,
+    "mean_steps_among_completions": 103.4,
+    "median_steps_among_completions": 105.0,
+    "score": [
+      0.1,
+      1.0,
+      -105.0,
+      -4.903060268852505
+    ],
+    "validation_after_episode": 263
+  }
+}

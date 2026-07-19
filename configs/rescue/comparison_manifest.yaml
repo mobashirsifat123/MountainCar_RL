@@ -1,0 +1,11 @@
+schema_version: 1
+groups:
+  rescue_seed0:
+    reference: ../full/dqn_replay.yaml
+    candidates:
+      epsilon_slow: epsilon_slow_seed0.yaml
+      warmup_long: warmup_long_seed0.yaml
+      learning_rate_small: learning_rate_small_seed0.yaml
+      target_update_slow: target_update_slow_seed0.yaml
+      shaping_moderate: shaping_moderate_seed0.yaml
+      budget_long: budget_long_seed0.yaml
